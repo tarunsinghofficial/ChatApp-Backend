@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 
 const io = new Server(server, {
     cors: {
-        origin: "https://chat-app-frontend-theta.vercel.app/",
+        origin: "chat-app-frontend-theta.vercel.app",
         methods: ["GET", "POST"]
     }
 })
