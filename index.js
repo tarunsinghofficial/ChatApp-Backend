@@ -4,14 +4,14 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({origin: "*"}));
+app.use(cors({origin: "https://chat-app-frontend-theta.vercel.app/"}));
 
 const server = http.createServer(app);
 const PORT = process.env.PORT || 4000;
 
 const io = new Server(server, {
     cors: {
-        origin: "*",
+        origin: "https://chat-app-frontend-theta.vercel.app/",
         methods: ["GET", "POST"]
     }
 })
